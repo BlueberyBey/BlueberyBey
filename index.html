@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUEBERRYBEY - Illustration Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header và Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <!-- keep only logo when using resposive on mobile -->
+                <a href="#">
+                    <img src="assets/Logo.png" alt="logo" class="nav-logo">
+                </a>
+                <a href="#" class="nav-title">BLUEBERYBEY</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#work" class="nav-link">WORK</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="mobile-menu-btn">
+                <svg class="mobile-menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <div class="mobile-menu-brand">
+                        <a href="#">
+                            <img src="assets/Logo.png" alt="logo" class="mobile-menu-logo">
+                        </a>
+                        <span class="mobile-menu-title">BLUEBERYBEY</span>
+                    </div>
+                    <button class="mobile-menu-close" id="mobile-menu-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="mobile-menu-links">
+                    <a href="#work" class="mobile-menu-link">WORK</a>
+                    <a href="#about" class="mobile-menu-link">ABOUT</a>
+                    <a href="#contact" class="mobile-menu-link">CONTACT</a>
+                </div>
+                
+                <div class="mobile-menu-footer">
+                    <p class="mobile-menu-footer-text">Creating visual stories through digital art</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero-title fade-in">ILLUSTRATION ARTIST</h1>
+            <p class="hero-description fade-in">
+                Creating visual stories through digital art and illustration. 
+                Exploring the boundaries between imagination and reality.
+            </p>
+            <a href="#work" class="btn-primary hero-btn fade-in">
+                VIEW PORTFOLIO
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-dark">
+            <div class="container">
+                <h2 class="section-title fade-in">ABBEY NGUYEN</h2>
+                <div class="about-grid">
+                    <div class="about-content fade-in" style="text-align: center;">
+                        <h3 class="about-subtitle">ABOUT ME</h3>
+                        <p class="about-text">
+                            I am Abbey, an illustrator specializing in semi-realistic character illustration. I have a strong artistic eye and quickly learn and adapt to new challenges, continuously refining my skills through analysis and practice. My perfectionist mindset drives me to push creative boundaries and deliver high-quality work.
+                        </p>
+                        <p class="about-text">
+                            I specialize in character illustration and aim to contribute my skills to the creative community, where I hope to help create projects that inspire and bring joy to customers.
+                        </p>
+                    </div>
+                    <div class="about-image fade-in">
+                        <!-- Placeholder for profile image -->
+                         <img class="about-me" src="assets/AboutMe.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="work" class="section-dark">
+            <div class="container">
+                <h2 class="section-title fade-in">WORKS</h2>
+                <div class="works-grid-hero">
+                    <!-- Hero Work Item (Large) -->
+                    <div class="gallery-item hero-work fade-in">
+                        <div class="work-image-placeholder hero-image">
+                            <!-- Works Pic 1 -->
+                            <img src="assets/Works/Fanart of Iso.png" alt="Web Poem Illustration" class="work-image">
+                        </div>
+                        <div class="overlay">
+                            <h3 class="overlay-title">Fanart of Iso (Valorant)</h3>
+                            <p class="overlay-category">Digital Painting, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Side Work Items (Small) -->
+                    <div class="side-works">
+                        <!-- Work Item 2 -->
+                        <div class="gallery-item side-work fade-in">
+                            <div class="work-image-placeholder side-image">
+                                <!-- Works Pic 2 -->
+                                <img src="assets/Works/Wanderer in the Woods.png" alt="Character Design" class="work-image">
+                            </div>
+                            <div class="overlay">
+                                <h3 class="overlay-title">Wanderer in the Woods</h3>
+                                <p class="overlay-category">Digital Painting, 2025</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Work Item 3 -->
+                        <div class="gallery-item side-work fade-in">
+                            <div class="work-image-placeholder side-image">
+                                <!-- Works Pic 3 -->
+                                <img src="assets/Works/Scarlet Gaze.png" class="work-image">
+                            </div>
+                            <div class="overlay">
+                                <h3 class="overlay-title">Scarlet Gaze</h3>
+                                <p class="overlay-category">Digital Illustration, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web Poem Illustration Section -->
+        <section id="web-poem" class="section-dark">
+            <div class="container">
+                <h2 class="section-title fade-in">WEB POEM ILLUSTRATION</h2>
+                <div class="web-poem-layout">
+                    <div class="web-poem-image">
+                        <img src="assets/Illustration_Img.png" alt="Web Poem Illustration" class="poem-image" style="height: 600px;">
+                        <h3 class="poem-title mobile-only">LENIENCY</h3>
+                    </div>
+                    <div class="web-poem-content">
+                        <h3 class="poem-title desktop-only">LENIENCY</h3>
+                        <p class="poem-text">
+                            Leniency is a personal project that merges poetry with illustration, following the journey of a knight in search of his mother while confronting his deepest fears. Drawing from dark-fantasy aesthetics, the project conveys silence, melancholy, and resilience. 
+                        </p>
+                        <p class="poem-text">
+                            I used cold and dark color palettes to establish a somber mood, while applying contrast and white space to separate characters and landscapes from their backgrounds. This visual approach creates a strong interplay between illustration and poetry, enhancing both the narrative clarity and emotional depth of the project.
+                        </p>
+                        <div class="see-more-container">
+                            <a href="gallery.html" target="_blank" class="see-more-link">See more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Process Section -->
+        <section id="process" class="section-dark">
+            <div class="container">
+                <h2 class="section-title fade-in">CREATIVE PROCESS</h2>
+                <div class="timeline-container fade-in">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-nodes">
+                        <div class="timeline-node active" data-image="assets/Illustration process/Ideation.png" data-title="Ideation" data-description="We start by brainstorming and screening potential ideas as this is the backbone of the project.">
+                            <div class="node-circle"></div>
+                            <span class="node-title">Ideation</span>
+                        </div>
+                        <div class="timeline-node" data-image="assets/Illustration process/Character design.png" data-title="Character Design" data-description="Developing unique character designs and visual elements that bring the character to life with their own personality.">
+                            <div class="node-circle"></div>
+                            <span class="node-title">Character Design</span>
+                        </div>
+                        <div class="timeline-node" data-image="assets/Illustration process/Layout prototype.png" data-title="Layout Prototype" data-description="Test out different layout prototypes and compositions as this is one of the most important part to lead the viewer to the points you want them to focus on.">
+                            <div class="node-circle"></div>
+                            <span class="node-title">Layout Prototype</span>
+                        </div>
+                        <div class="timeline-node" data-image="assets/Illustration process/Render.png" data-title="Final Render" data-description="Bringing the design to completion with final rendering and details for a professional finish.">
+                            <div class="node-circle"></div>
+                            <span class="node-title">Final Render</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-content-display fade-in">
+                    <img id="timelineImage" src="assets/Illustration process/Ideation.png" alt="Process Image" class="timeline-image">
+                    <div class="timeline-text-content">
+                        <p id="timelineDescription" class="timeline-content-description">We start by brainstorming and screening potential ideas as this is the backbone of the project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-dark">
+            <div class="container">
+                <h2 class="section-title">CONTACT</h2>
+                <p class="contact-subtitle">I welcome opportunities to collaborate on creating captivating worlds—get in touch below.</p>
+                
+                <div class="contact-content">
+                    <!-- Left Column - Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p>District 7, Ho Chi Minh City, Vietnam</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call Me</h3>
+                                <p>+84 98522669</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Me</h3>
+                                <p>BlueberyBey@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Contact Form -->
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 BLUEBERYBEY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal Overlay -->
+    <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalCategory"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
